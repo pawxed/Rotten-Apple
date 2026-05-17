@@ -72,10 +72,19 @@ static void disableDaemons(void) {
     }
     
     
-    NSDictionary *attrs = @{NSFilePosixPermissions: @(0644)};
+        // i forgot to implement this, uuuhh whoops!
+    NSDictionary *attrs = @{
+        NSFilePosixPermissions: @(0644),
+        NSFileOwnerAccountID: @(0),
+        NSFileGroupOwnerAccountID: @(0)
+    };
+
     [fileManager setAttributes:attrs ofItemAtPath:disabledPlistPath error:&error];
+
     if (error) {
-        NSLog(@"error: %@", error);
+        NSLog(@"epic fail: %@", error);
+    } else {
+        NSLog(@"ok:wheel and permissions to 644");
     }
 }
 
