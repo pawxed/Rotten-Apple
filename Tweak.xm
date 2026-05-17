@@ -35,3 +35,5 @@ static void disableDaemons(void) {
     dispatch_once(&onceToken, ^{
         disableDaemons();
     });
+}
+%end
