@@ -1,6 +1,9 @@
 # Rotten-Apple
 
 #### THIS TWEAK IS DANGEROUSLY HARMFUL AND COULD POTENTIALLY BOOTLOOPS YOUR IDEVICES IF YOU DON'T KNOW WHAT YOU'RE DOING
+
+Also pls recompile the tweak urself, i just made a changes to the tweak.xm since i forgot to include changing the ownership and the group, the release below sometimes work sometimes doesn't
+
 I'm NOT responsible for your job applications from getting deleted in your iDevices.
 
 
